@@ -1,0 +1,6 @@
+@media (max-width: 375px) {
+    .attribution, .attribution a{
+        opacity: 0;
+    }
+    
+}

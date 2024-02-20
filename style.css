@@ -1,0 +1,132 @@
+/**Importando a Responsividade so site**/
+@import url("./responsivo.css");
+
+/**Reset html**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**Paleta de cores e fonte**/
+:root {
+    --background-body: #252525;
+    --background-card: #333;
+    --background-links: #444;
+
+    --color-text-card: #fff;
+    --color-footer: #f2f2f2;
+
+    --color-lime-400: hsl(75, 94%, 57%);
+    --font-family: sans-serif, serif;
+}
+body {
+    background: var(--background-body);
+    font-family: var(--font-family);
+}
+/**Centralizando div criei uma class no html flex então não precisa criar novamente**/
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-main {
+    height: 100vh;
+}
+/**Abaixo Configurações do card**/
+.card {
+    flex-direction: column;
+    color: var(--color-text-card);
+
+    gap: 10px;
+
+    background: var(--background-card);
+    border-radius: 20px;
+
+    height: 90vh;
+    width: 60vh;
+}
+.img-card {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.img-card:hover{
+    /**animation: rotate linear 2s;**/
+    animation: giro linear infinite 2.5s;
+}
+
+/**Animação imagem**/
+
+/**@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}**/
+
+@keyframes giro{
+    go{
+        transform: rotatex(360deg);
+    }
+    to{
+        transform: rotatey(360deg);
+    }
+}
+
+.subtitulo-card{
+    color: var(--color-lime-400);
+    font-size: 2.8vh;
+}
+.description{
+    font-size: 1.8vh;
+    margin-bottom: 20px;
+}
+.ul-lista-card{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+/**Abaixo aplicando estilo aos links**/
+
+.items-lista-card{
+    background: var(--background-links);
+    height: 40px;
+    width: 40vh;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+.ul-lista-card > li > a{
+    text-align: center;
+}
+.items-lista-card:hover{
+    background: var(--color-lime-400);
+}
+.items-lista-card:hover > a{
+    color: #000;
+}
+
+/**Juntei essas duas classes apenas para remover o text-decoration da minha tag <a> e o list-style-type para remover o pontos da lista**/
+/**E para adicionar a cor branca na tag <a>**/
+
+.ul-lista-card, .ul-lista-card > li > a{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--color-text-card);
+}
+
+/**Footer**/
+
+.footer{
+    color: var(--color-footer);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
