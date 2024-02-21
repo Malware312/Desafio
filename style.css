@@ -1,6 +1,5 @@
 /**Importando a Responsividade so site**/
 @import url("./responsivo.css");
-
 /**Reset html**/
 * {
     margin: 0;
@@ -10,8 +9,8 @@
 
 /**Paleta de cores e fonte**/
 :root {
-    --background-body: #252525;
-    --background-card: #333;
+    --background-body: #151515;
+    --background-card: #222;
     --background-links: #444;
 
     --color-text-card: #fff;
@@ -31,7 +30,8 @@ body {
     align-items: center;
 }
 .container-main {
-    height: 100vh;
+    position: relative;
+    top: 25px; /*  tira o tamanha absoluto daki deixa um relativo  ai ele vai ficar mais responsivo por si só*/
 }
 /**Abaixo Configurações do card**/
 .card {
@@ -80,7 +80,6 @@ body {
 }
 .description{
     font-size: 1.8vh;
-    margin-bottom: 20px;
 }
 .ul-lista-card{
     flex-direction: column;
