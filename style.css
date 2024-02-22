@@ -34,7 +34,7 @@ body {
 }
 .container-main {
     position: relative;
-    top: 25px; /*  tira o tamanha absoluto daki deixa um relativo  ai ele vai ficar mais responsivo por si só*/
+    top: 25px;
 }
 /**Abaixo Configurações do card**/
 .card {
